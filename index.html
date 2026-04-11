@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-toolbar">
+    <div class="toolbar-inner">
+      <a href="catalog.html" class="toolbar-back-button">← Back to Catalog</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="left-panel">
+      <img src="bluebottle.png" alt="Product Photo" />
+    </div>
+
+    <div class="right-panel">
+      <h1 class="title">Example Product Title</h1>
+
+      <div class="description">
+        <p>
+          This product is designed to provide a simple and reliable buying experience.
+          It can be presented like a real product landing page, where the customer can
+          first understand the product, then review key details, and finally place an order.
+        </p>
+
+        <p>
+          Below is an example of a longer description section with bullet points and a table.
+          This structure is much better than one single paragraph because it makes the page
+          easier to scan and lets you keep adding more content as needed.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Clean and modern product presentation</li>
+          <li>Large image display on the left side</li>
+          <li>Detailed description area with multiple content sections</li>
+          <li>Simple order form for customer information</li>
+          <li>Expandable layout for long product details</li>
+        </ul>
+
+        <h2>Why People Buy It</h2>
+        <ul>
+          <li>Easy to understand product information</li>
+          <li>Clear ordering process</li>
+          <li>Professional looking layout</li>
+          <li>Works well for longer descriptions and specifications</li>
+        </ul>
+
+        <h2>Product Comparison</h2>
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Quantity Range</th>
+              <th>Price</th>
+              <th>Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic</td>
+              <td>1 - 5</td>
+              <td>$20</td>
+              <td>Email Only</td>
+            </tr>
+            <tr>
+              <td>Standard</td>
+              <td>6 - 20</td>
+              <td>$18</td>
+              <td>Email + Chat</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>21+</td>
+              <td>$15</td>
+              <td>Priority Support</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Ordering Notes</h2>
+        <p>
+          Customers can enter their name, email, requested quantity, and any special
+          notes in the form below. This makes the page suitable for a simple frontend
+          order request page.
+        </p>
+
+        <p>
+          You can continue adding more sections here, such as shipping information,
+          refund policy, FAQ, testimonials, or technical specifications.
+        </p>
+      </div>
+
+      <form class="order-form">
+        <label for="name">Person's Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" />
+
+        <label for="note">Note</label>
+        <textarea id="note" name="note" rows="4" placeholder="Add a note"></textarea>
+
+        <button type="submit">Chart</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
