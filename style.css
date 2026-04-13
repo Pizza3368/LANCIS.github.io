@@ -236,3 +236,67 @@ body {
 .toolbar-back-button:hover {
   text-decoration: underline;
 }
+.container {
+  display: flex;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  align-items: flex-start;
+  background-color: white;
+  transition: all 0.35s ease;
+}
+
+.left-panel {
+  width: 45%;
+  padding: 40px 30px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  transition: width 0.35s ease, padding 0.35s ease, transform 0.35s ease;
+}
+
+.left-panel img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  background-color: #ddd;
+  transition: transform 0.35s ease;
+}
+
+.right-panel {
+  width: 55%;
+  padding: 40px 45px 60px 20px;
+  transition: width 0.35s ease, padding 0.35s ease;
+}
+.container.table-focus .left-panel {
+  width: 22%;
+  padding: 40px 16px 40px 20px;
+}
+
+.container.table-focus .left-panel img {
+  transform: scale(0.95);
+}
+
+.container.table-focus .right-panel {
+  width: 78%;
+  padding: 40px 24px 60px 12px;
+}
+
+<script>
+  const container = document.querySelector('.container');
+  const tableSection = document.querySelector('#table-section');
+
+  if (container && tableSection) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        container.classList.toggle('table-focus', entry.isIntersecting);
+      },
+      {
+        threshold: 0.2
+      }
+    );
+
+    observer.observe(tableSection);
+  }
+</script>

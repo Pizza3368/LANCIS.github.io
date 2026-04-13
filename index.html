@@ -19,69 +19,103 @@
     </div>
 
     <div class="right-panel">
-      <h1 class="title">Example Product Title</h1>
+      <h1 class="title">Quartz Cuvette</h1>
 
       <div class="description">
         <p>
-          This product is designed to provide a simple and reliable buying experience.
-          It can be presented like a real product landing page, where the customer can
-          first understand the product, then review key details, and finally place an order.
+          This quartz cuvette is designed for UV/VIS/NIR absorbance and fluorescence 
+            measurements, suitable for routine laboratory analysis and research applications.
         </p>
 
-        <p>
-          Below is an example of a longer description section with bullet points and a table.
-          This structure is much better than one single paragraph because it makes the page
-          easier to scan and lets you keep adding more content as needed.
-        </p>
+        <hr>
 
-        <h2>Key Features</h2>
+        <h2>Design &amp; Dimensions</h2>
         <ul>
-          <li>Clean and modern product presentation</li>
-          <li>Large image display on the left side</li>
-          <li>Detailed description area with multiple content sections</li>
-          <li>Simple order form for customer information</li>
-          <li>Expandable layout for long product details</li>
+        <li>Standard rectangular cuvette</li>
+        <li>External dimensions: <strong>12.5 × 12.5 × 45 mm</strong></li>
+        <li>Optical path length: <strong>10 mm</strong></li>
+        <li>Volume: <strong>~3.5 mL</strong></li>
         </ul>
 
-        <h2>Why People Buy It</h2>
+        <hr>
+
+        <h2>Optical Performance</h2>
         <ul>
-          <li>Easy to understand product information</li>
-          <li>Clear ordering process</li>
-          <li>Professional looking layout</li>
-          <li>Works well for longer descriptions and specifications</li>
+        <li>Spectral range (T &gt; 80%): <strong>200 – 2500 nm</strong></li>
+        <li>Good cuvette-to-cuvette consistency</li>
+        <li>Suitable for UV, visible, and near-IR measurements</li>
         </ul>
 
-        <h2>Product Comparison</h2>
-        <table class="info-table">
-          <thead>
-            <tr>
-              <th>Version</th>
-              <th>Quantity Range</th>
-              <th>Price</th>
-              <th>Support</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Basic</td>
-              <td>1 - 5</td>
-              <td>$20</td>
-              <td>Email Only</td>
-            </tr>
-            <tr>
-              <td>Standard</td>
-              <td>6 - 20</td>
-              <td>$18</td>
-              <td>Email + Chat</td>
-            </tr>
-            <tr>
-              <td>Premium</td>
-              <td>21+</td>
-              <td>$15</td>
-              <td>Priority Support</td>
-            </tr>
-          </tbody>
-        </table>
+        <hr>
+
+        <h2>Material &amp; Construction</h2>
+        <ul>
+        <li>High-purity quartz optical glass</li>
+        <li>Precision polished optical windows</li>
+        <li>Good parallelism for accurate measurements</li>
+        <li>Available in <strong>4 optical sides (fluorescence use)</strong></li>
+        </ul>
+
+        <hr>
+
+        <h2>Applications</h2>
+        <ul>
+        <li>UV-Vis spectroscopy</li>
+        <li>Fluorescence spectroscopy</li>
+        <li>Chemical analysis</li>
+        <li>Environmental and biological testing</li>
+        </ul>
+
+        <hr>
+
+        <h2>Packaging</h2>
+        <ul>
+        <li>Individually packed</li>
+        <li>Available as single (1 pc) or matched (2 pcs) pairs in a box.</li>
+        </ul>
+
+
+        <section class="table-section" id="table-section">
+            <h2>Detailed Product Specifications</h2>
+            <table class="info-table">
+            <thead>
+                <tr>
+                <th>Product / Part No.</th>
+                <th>Dimensions</th>
+                <th>Sample Volume</th>
+                <th>Pathlength</th>
+                <th>Cover Type</th>
+                <th>Exterior Dimensions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>410040-056</td>
+                <td>W×L 10×10 mm</td>
+                <td>3.5 ml</td>
+                <td>10 mm</td>
+                <td>Stopper</td>
+                <td>12.5W × 12.5L × 45H mm</td>
+                </tr>
+                <tr>
+                <td>410040-064</td>
+                <td>W×L 10×10 mm</td>
+                <td>3.5 ml</td>
+                <td>10 mm</td>
+                <td>Flat lid</td>
+                <td>12.5W × 12.5L × 45H mm</td>
+                </tr>
+                <tr>
+                <td>410040-057</td>
+                <td>W×L 10×10 mm</td>
+                <td>3.5 ml</td>
+                <td>10 mm</td>
+                <td>Screw cap</td>
+                <td>12.5W × 12.5L × 52H mm</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
 
         <h2>Ordering Notes</h2>
         <p>
@@ -96,7 +130,7 @@
         </p>
       </div>
 
-      <form class="order-form">
+      <!-- <form class="order-form">
         <label for="name">Person's Name</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" />
 
@@ -110,8 +144,27 @@
         <textarea id="note" name="note" rows="4" placeholder="Add a note"></textarea>
 
         <button type="submit">Chart</button>
-      </form>
+      </form> -->
     </div>
   </div>
+
+  <script>
+  const container = document.querySelector('.container');
+  const tableSection = document.querySelector('#table-section');
+
+  if (container && tableSection) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        container.classList.toggle('table-focus', entry.isIntersecting);
+      },
+      {
+        threshold: 0.2
+      }
+    );
+
+    observer.observe(tableSection);
+  }
+</script>
+
 </body>
 </html>
