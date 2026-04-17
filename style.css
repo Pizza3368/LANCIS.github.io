@@ -335,3 +335,8 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+.price-sub {
+  font-size: 0.75em;
+  color: #555;
+}
