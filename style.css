@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -339,4 +339,414 @@ body {
 .price-sub {
   font-size: 0.75em;
   color: #555;
+} */
+
+/*
+new
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* Top toolbar */
+
+.top-toolbar {
+  width: 100%;
+  background-color: #0b2a5b;
+  padding: 14px 0;
+}
+
+.toolbar-inner {
+  width: min(1200px, 100%);
+  min-height: 48px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-back-button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.toolbar-back-button:hover {
+  text-decoration: underline;
+}
+
+.toolbar-logo-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toolbar-logo {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+
+/* Product page */
+
+.product-page {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* Top product section: image left, text right */
+
+.product-hero-row {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 36px;
+  padding: 40px 32px 28px;
+  align-items: start;
+}
+
+.product-image-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-main-image {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+}
+
+.product-summary {
+  padding-top: 4px;
+}
+
+.product-code {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.title {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.summary-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
+  margin-bottom: 18px;
+}
+
+.summary-info-box {
+  background-color: #e8f4ff;
+  padding: 14px 18px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.summary-info-box a {
+  color: #0b2a5b;
+}
+
+/* Full-width details after hero */
+
+.product-details {
+  padding: 0 32px 70px;
+}
+
+.description {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.description h2 {
+  font-size: 24px;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.description p {
+  margin-bottom: 18px;
+}
+
+.description ul {
+  margin-left: 24px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.description a {
+  color: #0b2a5b;
+}
+
+.description hr {
+  border: none;
+  border-top: 2px solid #d0d0d0;
+  margin: 28px 0 18px;
+}
+
+/* Product table */
+
+.table-section {
+  margin-top: 20px;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 28px;
+  font-size: 15px;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.info-table th {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+.table-product-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.table-product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+.price-sub {
+  font-size: 0.75em;
+  color: #555;
+}
+
+/* Catalog page */
+
+.catalog-page {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 40px 30px 60px;
+}
+
+.catalog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.catalog-header h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.catalog-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.catalog-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.catalog-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  background-color: #ddd;
+}
+
+.catalog-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.catalog-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.catalog-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #222;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.catalog-button:hover {
+  background-color: #444;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 36px;
+  margin: 32px 0;
+}
+
+.info-section {
+  border-top: 2px solid #d0d0d0;
+  padding-top: 18px;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.info-section ul {
+  margin-left: 24px;
+  line-height: 1.8;
+}
+
+.info-section li {
+  margin-bottom: 8px;
+}
+
+.property-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f5f6fa;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.property-table th,
+.property-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+.property-table th {
+  width: 38%;
+  font-weight: bold;
+  color: #222;
+}
+
+.property-table td {
+  color: #333;
+}
+
+.property-table tr:last-child th,
+.property-table tr:last-child td {
+  border-bottom: none;
+}
+.optical-section .property-table {
+  margin-bottom: 16px;
+}
+
+.optical-chart-box {
+  width: 60%;
+  height: 160px;
+  padding: 10px;
+  margin: 16px auto 0;
+  border: 3px solid #ddd;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optical-chart-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.optical-chart-link {
+  display: block;
+  cursor: zoom-in;
+}
+
+.image-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.image-lightbox:target {
+  display: flex;
+}
+
+.image-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  color: white;
+  font-size: 42px;
+  text-decoration: none;
+  font-weight: bold;
 }
