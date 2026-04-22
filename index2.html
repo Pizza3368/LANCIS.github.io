@@ -3,115 +3,258 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Page</title>
+  <title>Quartz Cuvette</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Top Toolbar -->
   <div class="top-toolbar">
     <div class="toolbar-inner">
       <a href="catalog.html" class="toolbar-back-button">← Back to Catalog</a>
+
+      <div class="toolbar-logo-wrap">
+        <img src="logo.png" alt="Company Logo" class="toolbar-logo" />
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="left-panel">
-      <img src="cuvette.png" alt="Product Photo" />
-    </div>
+  <!-- Main Product Page -->
+  <main class="product-page">
 
-    <div class="right-panel">
-      <h1 class="title">Example Product Title</h1>
-
-      <div class="description">
-        <p>
-          This product is designed to provide a simple and reliable buying experience.
-          It can be presented like a real product landing page, where the customer can
-          first understand the product, then review key details, and finally place an order.
-        </p>
-
-        <p>
-          Below is an example of a longer description section with bullet points and a table.
-          This structure is much better than one single paragraph because it makes the page
-          easier to scan and lets you keep adding more content as needed.
-        </p>
-
-        <h2>Key Features</h2>
-        <ul>
-          <li>Clean and modern product presentation</li>
-          <li>Large image display on the left side</li>
-          <li>Detailed description area with multiple content sections</li>
-          <li>Simple order form for customer information</li>
-          <li>Expandable layout for long product details</li>
-        </ul>
-
-        <h2>Why People Buy It</h2>
-        <ul>
-          <li>Easy to understand product information</li>
-          <li>Clear ordering process</li>
-          <li>Professional looking layout</li>
-          <li>Works well for longer descriptions and specifications</li>
-        </ul>
-
-        <h2>Product Comparison</h2>
-        <table class="info-table">
-          <thead>
-            <tr>
-              <th>Version</th>
-              <th>Quantity Range</th>
-              <th>Price</th>
-              <th>Support</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Basic</td>
-              <td>1 - 5</td>
-              <td>$20</td>
-              <td>Email Only</td>
-            </tr>
-            <tr>
-              <td>Standard</td>
-              <td>6 - 20</td>
-              <td>$18</td>
-              <td>Email + Chat</td>
-            </tr>
-            <tr>
-              <td>Premium</td>
-              <td>21+</td>
-              <td>$15</td>
-              <td>Priority Support</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>Ordering Notes</h2>
-        <p>
-          Customers can enter their name, email, requested quantity, and any special
-          notes in the form below. This makes the page suitable for a simple frontend
-          order request page.
-        </p>
-
-        <p>
-          You can continue adding more sections here, such as shipping information,
-          refund policy, FAQ, testimonials, or technical specifications.
-        </p>
+    <!-- Top Hero Section: Image Left, Text Right -->
+    <section class="product-hero-row">
+      <div class="product-image-box">
+        <img src="bluebottle.png" alt="Quartz Cuvette" class="product-main-image" />
       </div>
 
-      <form class="order-form">
-        <label for="name">Person's Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <div class="product-summary">
+        <div class="product-code">Quartz Cuvette</div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" />
+        <h1 class="title">Enhanced Chemical Resistance, 4 Polished Sides, Screw Caps Cuvette</h1>
 
-        <label for="quantity">Quantity</label>
-        <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" />
+        <p class="summary-text">
+          Synthetic quartz glass for UV/VIS/NIR absorbance and fluorescence
+          measurements. Suitable for routine laboratory analysis and research applications.
+        </p>
 
-        <label for="note">Note</label>
-        <textarea id="note" name="note" rows="4" placeholder="Add a note"></textarea>
+        <div class="summary-info-box">
+            <strong> CAD 358  <span class="price-sub">+ tax / pair</span></strong><br>
+          Available in Canada only<br>
+          For purchase inquiries, contact
+          <a href="mailto:inquirelancis@gmail.com">inquirelancis@gmail.com</a>.
+        </div>
+      </div>
+    </section>
 
-        <button type="submit">Chart</button>
-      </form>
-    </div>
-  </div>
+    <!-- Full Width Product Details -->
+    <section class="product-details">
+      <div class="description">
+
+        <div class="section-grid">
+
+          <!-- Design & Dimensions -->
+          <section class="info-section">
+            <h2>Design &amp; Dimensions</h2>
+
+            <table class="property-table">
+              <tbody>
+                <tr>
+                  <th>Product ID</th>
+                  <td> CV-04-3500-SC</td>
+                </tr>
+                <tr>
+                  <th>Product Descritpion
+                  </th>
+                  <td>
+                    <li>Strong Acid/Base Resisant</li>
+                    <li>Organic Solvents Resisant</li>
+                    <li>Heat (&le; 1200 &deg;C) Resisant</li>
+                  </td>
+                </tr>
+                <tr>
+                  <th>W&timesD&timesH</th>
+                  <td>12.5 mm × 12.5 mm × 45.0 mm</td>
+                </tr>
+                <tr>
+                  <th>Optical Path Length</th>
+                  <td>10.0 mm</td>
+                </tr>
+                <tr>
+                  <th>Volume</th>
+                  <td>~3500 &microL</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Optical Performance -->
+          <section class="info-section">
+            <h2>Optical Performance</h2>
+
+            <table class="property-table">
+              <tbody>
+                <tr>
+                  <th>Spectral Range</th>
+                  <td>200 – 2500 nm</td>
+                </tr>
+                <tr>
+                  <th>Transmission</th>
+                  <td>T &gt; 91%</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            <div class="optical-chart-box">
+                <a href="#spectra-large" class="optical-chart-link">
+                <img src="tmspectra.png" alt="Transmission spectrum for quartz cuvette" class="optical-chart-image" />
+                </a>
+
+                <div id="spectra-large" class="image-lightbox">
+                <a href="#" class="lightbox-close">×</a>
+                <img src="tmspectra.png" alt="Transmission spectrum for quartz cuvette" />
+                </div>
+            </div>
+          </section>
+
+          <!-- Material & Construction -->
+          <section class="info-section">
+            <h2>Material &amp; Construction</h2>
+
+            <table class="property-table">
+              <tbody>
+                <tr>
+                  <th>Quartz Material</th>
+                  <td>JGS1 Fused Sillica, equivalent to Suprasil 1&2 (Heraeus) 
+                    <br>
+                        <a href="JGS1_spec.pdf" target="_blank" rel="noopener noreferrer">
+                        View specification PDF
+                  </td>
+                </tr>
+                <tr>
+                    <th>Screw Cap Material</th>
+                    <td>PTFE</td>
+                </tr>
+                <tr>
+                  <th>Assembly Process</th>
+                  <td>Monolithically Co-Fired</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Applications -->
+          <section class="info-section">
+            <h2>Applications</h2>
+           <ul>
+                <li>UV-Vis spectroscopy</li>
+                <li>Fluorescence spectroscopy</li>
+                <li>Chemical analysis</li>
+                <li>Environmental and biological testing</li>
+            </ul>
+          </section>
+
+          <!-- Packaging -->
+          <section class="info-section">
+            <h2>Packaging</h2>
+
+            <table class="property-table">
+              <tbody>
+                <tr>
+                  <th>Packaging</th>
+                  <td>Individually packed and cushioned</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+        </div>
+
+        <!-- Detailed Product Specifications Table -->
+        <section class="table-section" id="table-section">
+          <h2>Detailed Product Specifications</h2>
+
+          <table class="info-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Dimensions</th>
+                <th>Sample Volume</th>
+                <th>Pathlength</th>
+                <th>Cover Type</th>
+                <th>Exterior Dimensions</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <div class="table-product-cell">
+                    <span class="product-code">4500</span>
+                    <img src="stopper.png" alt="Stopper cuvette" class="table-product-image" />
+                  </div>
+                </td>
+                <td>W×L 10×10 mm</td>
+                <td>3.5 ml</td>
+                <td>10 mm</td>
+                <td>Stopper</td>
+                <td>12.5W × 12.5L × 45H mm</td>
+                <td>
+                  CAD 135<br>
+                  <span class="price-sub">+tax / piece</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="table-product-cell">
+                    <img src="flat.png" alt="Flat lid cuvette" class="table-product-image" />
+                  </div>
+                </td>
+                <td>W×L 10×10 mm</td>
+                <td>3.5 ml</td>
+                <td>10 mm</td>
+                <td>Flat lid</td>
+                <td>12.5W × 12.5L × 45H mm</td>
+                <td>
+                  CAD 135<br>
+                  <span class="price-sub">+tax / piece</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="table-product-cell">
+                    <img src="bluebottle.png" alt="Screw cap cuvette" class="table-product-image" />
+                  </div>
+                </td>
+                <td>W×L 10×10 mm</td>
+                <td>3.5 ml</td>
+                <td>10 mm</td>
+                <td>Screw cap</td>
+                <td>12.5W × 12.5L × 52H mm</td>
+                <td>
+                  CAD 179<br>
+                  <span class="price-sub">+tax / piece</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Ordering Notes -->
+        <section class="ordering-section">
+          <h2>Ordering Notes</h2>
+          <p>
+            To place an order or request additional information, please contact
+            <a href="mailto:inquirelancis@gmail.com"><strong>inquirelancis@gmail.com</strong></a>.
+            We are currently accepting orders within <strong>Canada only</strong> and are unable
+            to fulfill orders to the <strong>United States</strong> at this time.
+          </p>
+        </section>
+
+      </div>
+    </section>
+  </main>
 </body>
 </html>
