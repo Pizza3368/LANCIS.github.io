@@ -154,29 +154,29 @@ body {
 
 .catalog-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .catalog-card {
   background-color: white;
   border-radius: 16px;
-  padding: 20px;
+  padding: 18px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .catalog-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  width: min(100%, 220px);
+  height: 220px;
+  object-fit: contain;
   display: block;
+  margin: 0 auto 16px;
   border-radius: 12px;
-  margin-bottom: 18px;
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 .catalog-card h2 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
@@ -200,6 +200,22 @@ body {
 
 .catalog-button:hover {
   background-color: #444;
+}
+
+@media (max-width: 900px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .catalog-page {
+    padding: 32px 18px 48px;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .back-button {
   display: inline-block;
@@ -584,29 +600,29 @@ body {
 
 .catalog-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .catalog-card {
   background-color: white;
   border-radius: 16px;
-  padding: 20px;
+  padding: 18px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .catalog-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  width: min(100%, 220px);
+  height: 220px;
+  object-fit: contain;
   display: block;
+  margin: 0 auto 16px;
   border-radius: 12px;
-  margin-bottom: 18px;
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 .catalog-card h2 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
@@ -630,6 +646,22 @@ body {
 
 .catalog-button:hover {
   background-color: #444;
+}
+
+@media (max-width: 900px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .catalog-page {
+    padding: 32px 18px 48px;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section-grid {
